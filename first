@@ -1,0 +1,36 @@
+#!/bin/bash
+#
+# My first shell script
+#
+LIST=$(ls)
+SERVER_NAME=$(hostname)
+
+echo $LIST
+
+empty_var=
+empty_var2=""
+
+#--------------------
+function hello() {
+    local LNAME=$1
+    echo "Hello $LNAME $2"
+}
+
+hello gegham mov
+#--------------------
+
+echo "today is `date`"
+
+expr 1 + 3
+expr 10 \* 2
+
+echo "You provided $# parameters to this program"
+echo "This process's PID is $$"
+echo "Your home folder is: $HOME"
+
+echo date: $(date)
+
+# means successful:
+# you can check it by: echo $? after running this shell script 
+exit 0 
+

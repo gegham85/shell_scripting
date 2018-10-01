@@ -1,0 +1,27 @@
+#!/bin/bash
+for (( i=0; i<=5; i++ ))
+do
+    echo "Welcome $i times"
+done
+
+for index in 1 2 3 4 5
+do
+    echo $index
+done
+
+#for i in `ls $HOME`
+for i in $(ls $HOME)
+do
+    echo $i
+done
+
+NAMES=$@
+for NAME in $NAMES
+do
+    if [ $NAME = "shit" ]
+    then
+        echo "no shit!"
+        break
+    fi
+    echo $NAME
+done

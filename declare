@@ -1,0 +1,8 @@
+#!/bin/bash
+declare -a servers
+servers=(
+   [ldcwebqa]="some stuff"
+   [ldcwebstg]="some stuff2"
+   [ldcwebprod]="some stuff3"
+)
+echo  ${servers[ldcwebqa]}

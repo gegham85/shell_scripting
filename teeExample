@@ -1,3 +1,0 @@
-#!/bin/bash
-echo "date string: $1" | tee -a some_log.log
-
